@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <style>
+    /* reset mínimo importante */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    /* opcional: evita qualquer overflow horizontal causado por algo inesperado */
+    html, body { overflow-x: hidden; }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divisor de Turmas Escolar</title>
@@ -345,9 +352,9 @@
             };
 
             return (
-                <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 pb-20">
+                <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 pb-24">
                     <div className="max-w-6xl mx-auto">
-                        <div className="bg-white rounded-xl shadow-2xl p-8 mb-6">
+                        <div className="bg-white rounded-xl shadow-2xl p-4 sm:p-8 mb-6">
                             <h1 className="text-4xl font-bold text-indigo-900 mb-2 flex items-center gap-3 relative">
                                 <div className="w-10 h-10"><Icons.Users /></div>
                                 Divisor de Turmas
@@ -805,13 +812,23 @@ Gabriela Araujo"
                     </div>
 
                     {/* Footer com informações de licença e doação */}
-                    <footer className="fixed bottom-0 left-0 right-0 bg-gray-100 border-t border-gray-300 py-3 px-4 text-center text-xs text-gray-600">
-                        <p>
-                            Projeto livre e independente • Licença <a href="https://github.com/Delg11" target="_blank" rel="noopener noreferrer" className="underline hover:text-indigo-600">GNU GPL</a> disponível no GitHub
-                            {' • '}
-                            Doações via PIX: <span className="font-mono font-semibold">g.delgado@unifesp.br</span>
-                        </p>
+
+                    <footer className="fixed bottom-0 left-0 right-0 bg-gray-100 border-t border-gray-300 py-2 text-[10px] sm:text-xs text-gray-600">
+                    <div className="max-w-6xl mx-auto px-2 sm:px-4 text-center">
+                        <div className="hidden sm:block truncate">
+                        Projeto livre e independente • Licença
+                        <a href="https://github.com/Delg11" target="_blank" rel="noopener noreferrer" className="underline hover:text-indigo-600"> GNU GPL</a>
+                        {' • '}
+                        Doações via PIX: <span className="font-mono font-semibold">g.delgado@unifesp.br</span>
+                        </div>
+                        <div className="sm:hidden flex flex-col gap-0.5 text-[9px]">
+                        <p className="truncate">Projeto livre • <a href="https://github.com/Delg11" target="_blank" rel="noopener noreferrer" className="underline">GNU GPL</a></p>
+                        <p className="truncate">PIX: <span className="font-mono font-semibold break-all">g.delgado@unifesp.br</span></p>
+                        </div>
+                    </div>
                     </footer>
+
+
                 </div>
             );
         }
