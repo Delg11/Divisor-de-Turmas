@@ -45,7 +45,7 @@ Acesse diretamente pelo navegador sem necessidade de instalação.
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/divisor-turmas.git
+git clone https://github.com/Delg11/Divisor-de-Turmas.git
 cd divisor-turmas
 ```
 
@@ -144,7 +144,7 @@ Contribuições são bem-vindas! Para contribuir:
 
 ## 🐛 Reportar Bugs
 
-Encontrou um bug? Abra uma [issue](https://github.com/seu-usuario/divisor-turmas/issues) com:
+Encontrou um bug? Abra uma [issue](https://github.com/Delg11/Divisor-de-Turmas/issues) com:
 - Descrição clara do problema
 - Passos para reproduzir
 - Comportamento esperado vs obtido
