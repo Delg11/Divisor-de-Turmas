@@ -19,7 +19,6 @@ Developed with **React** and **Tailwind CSS**, this project allows teachers to m
 
 - [React](https://react.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Vite](https://vitejs.dev/) *(if applicable)*
-- [Lucide Icons](https://lucide.dev/) *(or custom SVG icons)*
+- [Lucide Icons](https://lucide.dev/)
 
 
